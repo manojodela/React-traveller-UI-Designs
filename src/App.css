@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Playfair Display', serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.link {
+  text-decoration: none;
+  list-style: none;
+  padding: 10px 18px;
+  color: #000;
+  font-size: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.ant-space-item {
+  font-size: 16px;
+  color: #000;
+}
+
+span a {
+  text-decoration: none;
+}
+
+.title {
+  font-weight: normal;
+  font-family: 'Fauna One', serif;
+  letter-spacing: -1px;
+}
+
+.desc{
+  color: #9b9b9b;
+  margin-right: 16px;
+}
+
+.dot {
+  font-size: larger;
+  padding: 0;
+  color: #db2089 !important;
+}
+
+.tag {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  font-family: 'Fauna One', serif;
+}
+
+.more-btn {
+  color: #db2089;
+  position: relative;
+}
+
+.more-btn:hover {
+  color: black !important;
+}
+
+.img-down {
+  bottom: -8%;
+  left: -5%;
+}
+
+.img-sm {
+  width: 240px;
+  height: 170px !important;
+  box-shadow: 7px 7px 70px -10px rgb(0 0 0 / 70%);
+  object-fit: cover;
+  object-position: 100% 0;
+}
+
+.btn-dsp {
+  display: none;
+  position: relative;
+  width: fit-content;
+  transition: 0.5s;
+  background-color: #db2089;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 0;
+}
+
+.btn-down:hover .btn-dsp {
+  display: block;
+  transition: all 0.5s ease;
+  z-index: 1;
+  margin-right: -30px;
+}
+
+.tag-1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  font-family: 'Fauna One', serif;
+}
+
+.tag-1 span {
+  border-bottom: 1px solid #ccc;
+}
+
+.card1 {
+  background-position: 50% 50%;
+  background-size: cover;
+  box-shadow: 14px 14px 60px -10px rgb(0 0 0 / 30%);
+}
+
+.hovered{
+  padding: 10px;
+}
+.hovered:hover{
+  opacity: 0.9;
+}
+
+.margin-top{
+ top: 760px;
+}
+
+
+
+
+
+@media screen and (max-width:768px) {
+  .position-relative {
+    position: static !important;
+  }
+
+  .position-absolute.img-down {
+    position: static !important;
+    margin: auto;
+  }
+
+  .img-sm {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .bg-cover-none{
+    display: none;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width:545px){
+  .mg-0{
+    margin: 0 !important;
   }
 }

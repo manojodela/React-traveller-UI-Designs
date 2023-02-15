@@ -16,8 +16,11 @@ import gridImg4 from '../assets/gridImg5.jpeg';
 import Hero from '../assets/hero.jpeg';
 import Hero1 from '../assets/hero1.jpeg';
 import bg from '../assets/bg-cover.jpg';
+import { useLocation } from 'react-router-dom';
+import Footer from './Footer';
 
 const Stories = () => {
+    const { pathname } = useLocation();
     const style = {
         width: "300px",
         height: "400px",
@@ -30,9 +33,6 @@ const Stories = () => {
         height: "310px",
         'object-fit': "cover"
     };
-    const gridStyle = {
-        "background-color": "rgba(219,32,137,.5)"
-    }
 
     return <>
         <Container className='my-5 pt-5'>
@@ -71,16 +71,16 @@ const Stories = () => {
         <Container className='mt-4 '>
             <Row className="align-items-start " gutter={4}>
                 <Col lg={16} className="position-relative">
-                    <img src={side1} className="img-fluid " />
+                    <img src={side1} className="img-fluid " alt="side1" />
                     <div className="position-absolute img-down">
                         <Row>
                             <Col lg={12} xs={24} className="position-relative btn-down p-2">
-                                <img src={side2} className="img-fluid img-sm" />
-                                <Button className="position-absolute top-100 start-100 translate-middle btn-dsp">VIEW BLOG</Button>
+                                <img src={side2} className="img-fluid img-sm" alt="side2" />
+                                <Button className="position-absolute top-100 start-100 translate-middle btn-dsp text-white">VIEW BLOG</Button>
                             </Col>
                             <Col lg={12} xs={24} className="position-relative btn-down p-2">
-                                <img src={side3} className="img-fluid img-sm" />
-                                <Button className="position-absolute top-100 start-100 translate-middle btn-dsp" >ABOUT ME</Button>
+                                <img src={side3} className="img-fluid img-sm" alt="side3" />
+                                <Button className="position-absolute top-100 start-100 translate-middle btn-dsp text-white" >ABOUT ME</Button>
                             </Col>
                         </Row>
                     </div>
@@ -97,45 +97,45 @@ const Stories = () => {
             </Row>
         </Container>
         <Container fluid className='mt-5 cover-relative p-0 pt-5' style={{ position: "relative", zIndex: "1" }}>
-            <img src={bg} alt="bg-cover" className='img-fluid margin-top position-absolute bg-cover-none' />
+            <img src={bg} alt="bg-cover" className='img-fluid margin-top position-absolute bg-cover-none mb' />
             <Container>
-                <Row gutter={{ xs: 8, sm: 16, xs: 12 }}>
-                    <Col lg={12} md={12} sm={12}>
+                <Row gutter={{ lg: 12, md: 12, sm: 12 }} className="justify-content-center align-items-center">
+                    <Col lg={11} md={12} sm={12} xs={20}>
                         <div className='p-2 text-start'>
                             <h2 className="tag mb-4 fw-bold">Why am I sharing my travel stories?</h2>
                             <p className=' w-75'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
                         </div>
                         <div>
-                            <Row className='align-items-center '>
-                                <img src={avatar} alt="avatar" className='rounded-circle me-4' />
-                                <Col >
+                            <Row gutter={{ lg: 12, md: 12, sm: 12 }} className='align-items-center justify-content-center'>
+                                <img src={avatar} alt="avatar" className='rounded-circle me-4 img-mb ' />
+                                <Col className=''>
                                     <h3 className='mb-0 title'>Sarah Fischer</h3>
                                     <Button type="link" className="more-btn border-0 text-uppercase p-0">Read more stories &nbsp;<span className="fw-bold"> &#8211;</span></Button>
                                 </Col>
-                                <Row gutter={24} className="mg-0 justify-content-between">
-                                    <Col lg={11} md={12} sm={12} xs={24} className=" position-relative my-auto">
-                                        <img src={gridImg1} className="img-fluid card1" alt='card1' style={style1} />
+                                <Row gutter={{ lg: 12, md: 12, sm: 12 }} className="mg-0 justify-content-center">
+                                    <Col lg={12} md={12} sm={12} xs={24} className=" position-relative my-auto">
+                                        <img src={gridImg1} className="img-fluid card1 img-mb" alt='card1' style={style1} />
                                     </Col>
-                                    <Col lg={11} md={12} sm={12} xs={24} className=" position-relative">
+                                    <Col lg={12} md={12} sm={12} xs={24} className=" position-relative">
                                         <Space direction="vertical" size="middle">
-                                            <img src={Hero} className="img-fluid card1" alt='card1' style={style1} />
-                                            <img src={Hero1} className="img-fluid card1" alt='card1' style={style1} />
+                                            <img src={Hero} className="img-fluid card1 img-mb" alt='card1' style={style1} />
+                                            <img src={Hero1} className="img-fluid card1 img-mb" alt='card1' style={style1} />
                                         </Space>
                                     </Col>
                                 </Row>
                             </Row>
                         </div>
                     </Col>
-                    <Col lg={12} md={12} sm={12}>
-                        <Row gutter={24}>
-                            <Col lg={12} md={12} sm={12} xs={24} className=" position-relative">
+                    <Col lg={11} md={12} sm={12} xs={20}>
+                        <Row gutter={{ lg: 8,  md: 12, sm: 12 }} >
+                            <Col lg={12} md={12} sm={12} xs={24} className=" position-relative ">
                                 <Space direction="vertical" size="middle">
-                                    <img src={gridImg2} className="img-fluid card1" alt='card1' style={style1} />
-                                    <img src={gridImg3} className="img-fluid card1" alt='card1' style={style1} />
+                                    <img src={gridImg2} className="img-fluid card1 img-mb" alt='card1' style={style1} />
+                                    <img src={gridImg3} className="img-fluid card1 img-mb" alt='card1' style={style1} />
                                 </Space>
                             </Col>
                             <Col lg={12} md={12} sm={12} xs={24} className=" position-relative my-auto">
-                                <img src={gridImg4} className="img-fluid card1" alt='card1' style={style1} />
+                                <img src={gridImg4} className="img-fluid card1 img-mb" alt='card1' style={style1} />
                             </Col>
 
                         </Row>
@@ -143,8 +143,14 @@ const Stories = () => {
                 </Row>
             </Container>
         </Container>
-        
 
+        {pathname === '/' && (
+            <div className='footer-top position-relative'>
+                <div className='position-absolute footer w-100'>
+                    <Footer />
+                </div>
+            </div>
+        )}
     </>
 }
 export default Stories;

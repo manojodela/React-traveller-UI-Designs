@@ -27,20 +27,20 @@ const MainNavbar = () => {
     return (
         <Navbar expand="lg">
             <Container >
-                <Navbar.Brand href="#home">
+                <Navbar.Brand href="/">
                     <img src={logo} width="200" className="d-inline-block align-top" alt="React Bootstrap logo" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto bg-right">
-                        <Link to='#' href="#home" className='link'>Home</Link>
+                        <Link to='/' href="/" className='link'>Home</Link>
                         <Dropdown menu={{ items }}>
                             <Link onClick={(e) => e.preventDefault()} className='link'>
                                 <Space>Blog<DownOutlined /></Space>
                             </Link>
                         </Dropdown>
-                        <Link to="#" className='link'>About</Link>
-                        <Link to="#" className='link'>Contact</Link>
+                        <Link to="/about" className='link'>About</Link>
+                        <Link to="/contact" className='link'>Contact</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

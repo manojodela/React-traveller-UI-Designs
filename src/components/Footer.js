@@ -42,7 +42,7 @@ const Footer = () => {
                     </Row>
                     <p className="fw-normal mb-4 fs-5">WANT TO READ MY STORIES IN YOUR INBOX?</p>
                     <input type="text" className="form-control-lg border-0 rounded-0 mb-1" placeholder="Enter your email" />
-                    <Button className="text-white bg-btn form-control-lg border-0 rounded-0 mb-3">YES, AWESOME!</Button>
+                    <Button className="text-white bg-btn form-control-lg border-0 rounded-0 mb-3 font-style">YES, AWESOME!</Button>
                 </Col>
                 <Col lg={5} md={5} sm={12} xs={12}>
                     <div className="psoition-relative">

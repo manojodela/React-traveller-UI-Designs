@@ -16,6 +16,8 @@ import gridImg4 from '../assets/gridImg5.jpeg';
 import Hero from '../assets/hero.jpeg';
 import Hero1 from '../assets/hero1.jpeg';
 import bg from '../assets/bg-cover.jpg';
+import plane from '../assets/plane.jpeg';
+import sunset from '../assets/sunset.jpeg';
 import { useLocation } from 'react-router-dom';
 import Footer from './Footer';
 
@@ -39,22 +41,22 @@ const Stories = () => {
             <h2 className='tag-1'>Discover <span>My Stories</span></h2>
             <Row >
                 <Col lg={6} md={12} sm={12} xs={24} className="hovered position-relative">
-                    <img src={img1} className="img-fluid card1" alt='card1' style={style} />
+                    <img src={plane} className="img-fluid card1" alt='card1' style={style} />
                     <h4 className='position-absolute top-0 start-50 translate-middle mt-5 text-white'>Highlights</h4>
                     <Link className='position-absolute  bottom-0 start-50 translate-middle-x mb-5 text-white fw-normal text-uppercase'>View Posts</Link>
                 </Col>
                 <Col lg={6} md={12} sm={12} xs={24} className="hovered position-relative">
-                    <img src={img2} className="img-fluid card1" alt='card2' style={style} />
+                    <img src={sunset} className="img-fluid card1" alt='card2' style={style} />
                     <h4 className='position-absolute top-0 start-50 translate-middle mt-5 text-white'>Asia</h4>
                     <Link className='position-absolute  bottom-0 start-50 translate-middle-x mb-5 text-white fw-normal text-uppercase'>View Posts</Link>
                 </Col>
                 <Col lg={6} md={12} sm={12} xs={24} className="hovered position-relative">
-                    <img src={img3} className="img-fluid card1" alt='card3' style={style} />
+                    <img src={img4} className="img-fluid card1" alt='card3' style={style} />
                     <h4 className='position-absolute top-0 start-50 translate-middle mt-5 text-white'>Africa</h4>
                     <Link className='position-absolute  bottom-0 start-50 translate-middle-x mb-5 text-white fw-normal text-uppercase'>View Posts</Link>
                 </Col>
                 <Col lg={6} md={12} sm={12} xs={24} className="hovered position-relative">
-                    <img src={img4} className="img-fluid card1" alt='card4' style={style} />
+                    <img src={img2} className="img-fluid card1" alt='card4' style={style} />
                     <h4 className='position-absolute top-0 start-50 translate-middle mt-5 text-white'>Europe</h4>
                     <Link className='position-absolute  bottom-0 start-50 translate-middle-x mb-5 text-white fw-normal text-uppercase'>View Posts</Link>
                 </Col>
@@ -96,7 +98,7 @@ const Stories = () => {
 
             </Row>
         </Container>
-        <Container fluid className='mt-5 cover-relative p-0 pt-5' style={{ position: "relative", zIndex: "1" }}>
+        <Container fluid className='mt-2 cover-relative p-0 pt-3' style={{ position: "relative", zIndex: "1" }}>
             <img src={bg} alt="bg-cover" className='img-fluid margin-top position-absolute bg-cover-none mb' />
             <Container>
                 <Row gutter={{ lg: 12, md: 12, sm: 12 }} className="justify-content-center align-items-center">

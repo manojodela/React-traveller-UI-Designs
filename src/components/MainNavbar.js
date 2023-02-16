@@ -10,15 +10,15 @@ const MainNavbar = () => {
 
     const items = [
         {
-            label: (<a target="_blank" rel="noopener noreferrer" href="/">Blog Archive</a>),
+            label: (<a  rel="noopener noreferrer" href="/blog" className='d-link'>Blog Archive</a>),
             key: '0',
         },
         {
-            label: (<a target="_blank" rel="noopener noreferrer" href="/">Categories</a>),
+            label: (<a  rel="noopener noreferrer" href="/" className='d-link'>Categories</a>),
             key: '1',
         },
         {
-            label: (<a target="_blank" rel="noopener noreferrer" href="/">Tags</a>),
+            label: (<a  rel="noopener noreferrer" href="/" className='d-link'>Tags</a>),
             key: '3',
         },
 

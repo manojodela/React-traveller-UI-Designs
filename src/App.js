@@ -7,7 +7,8 @@ import Layout from './pages/Layout';
 import Index from './pages/Index';
 import About from './components/About';
 import Contact from './components/Contact';
-import Blog from './components/Blog';
+import BlogPage from './pages/BlogPage';
+import BlogCategories from './components/BlogCategories';
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
             <Route path='/' element={<Index />} />
             <Route path='/about' element={<About />} />
             <Route path='/contact' element={<Contact />} />
-            <Route path='/blog' element={<Blog />} />
+            <Route path='/blog' element={<BlogPage />} />
+            <Route path='/categories' element={<BlogCategories />} />
           </Routes>
         </Layout>
       </BrowserRouter>

@@ -243,6 +243,11 @@ a.text-white:hover {
   color: #db2089 !important;
 }
 
+.link:hover {
+  color: #db2089;
+  border-bottom: 1px solid #db2089;
+}
+
 .cat-img {
   background-position: 50% 50%;
   width: 290px;
@@ -294,6 +299,33 @@ a.text-white:hover {
 .font-style {
   font-family: playfair !important;
 }
+
+.card-hover {
+  filter: brightness(85%);
+  box-shadow: 14px 14px 16px -10px rgb(0 0 0 / 40%);
+}
+
+.card-hover:hover {
+  filter: brightness(100%);
+}
+
+.cat-img1 {
+  width: 300px;
+  height: 350px !important;
+  object-fit: cover;
+  filter: brightness(85%);
+  margin: 10px;
+  box-shadow: 14px 14px 16px -10px rgba(0 0 0 / 30);
+  background-position: 50% 50%;
+}
+
+.cat-img1:hover {
+  filter: brightness(100%);
+}
+
+
+
+
 
 
 @media screen and (max-width:767px) {
@@ -438,6 +470,14 @@ a.text-white:hover {
     max-width: 1000px;
   }
 
+  .d-inline-flex {
+    width: 237px;
+    margin-top: 1rem;
+  }
+
+  h1.display-3.fw-bolder {
+    margin-bottom: 20px !important;
+  }
 }
 
 
@@ -557,6 +597,25 @@ a.text-white:hover {
     justify-content: space-around !important;
   }
 }
+
+
+@media screen and (min-width:820px) and (max-width: 1023px) {
+
+  .d-inline-flex {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+}
+
+
+
+
+
+
+
+
+
 
 
 /* Footer */

@@ -14,7 +14,7 @@ const MainNavbar = () => {
             key: '0',
         },
         {
-            label: (<a  rel="noopener noreferrer" href="/" className='d-link'>Categories</a>),
+            label: (<a  rel="noopener noreferrer" href="/categories" className='d-link'>Categories</a>),
             key: '1',
         },
         {

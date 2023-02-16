@@ -10,16 +10,12 @@ const MainNavbar = () => {
 
     const items = [
         {
-            label: (<a  rel="noopener noreferrer" href="/blog" className='d-link'>Blog Archive</a>),
+            label: (<Link to='/blog' href="/blog" className='link'>Blog Archive</Link>),
             key: '0',
         },
         {
-            label: (<a  rel="noopener noreferrer" href="/categories" className='d-link'>Categories</a>),
+            label: (<Link to='/categories' href="/categories" className='link'>Categories</Link>),
             key: '1',
-        },
-        {
-            label: (<a  rel="noopener noreferrer" href="/" className='d-link'>Tags</a>),
-            key: '3',
         },
 
     ];

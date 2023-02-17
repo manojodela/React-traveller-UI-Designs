@@ -19,15 +19,15 @@ const Home = () => {
                     </div>
                 </Col>
                 <Col lg={16} className=" position-relative">
-                    <img src={Hero} className="img-fluid " alt="hero"/>
+                    <img src={Hero} className="img-fluid " alt="hero" />
                     <div className="position-absolute img-down">
                         <Row gutter={16}>
                             <Col lg={12} xs={24} className="position-relative btn-down">
-                                <img src={Hero1} className="img-fluid img-sm" alt="hero2"/>
+                                <img src={Hero1} className="img-fluid img-sm" alt="hero2" />
                                 <Button className="position-absolute top-100 start-100 translate-middle btn-dsp text-white">VIEW BLOG</Button>
                             </Col>
                             <Col lg={12} xs={24} className="position-relative btn-down">
-                                <img src={Hero2} className="img-fluid img-sm" alt="hero2"/>
+                                <img src={Hero2} className="img-fluid img-sm" alt="hero2" />
                                 <Button className="position-absolute top-100 start-100 translate-middle btn-dsp text-white" >ABOUT ME</Button>
                             </Col>
                         </Row>

@@ -24,7 +24,7 @@ import Footer from './Footer';
 const Stories = () => {
     const { pathname } = useLocation();
     const style = {
-        width: "300px",
+        width: "auto",
         height: "400px",
         opacity: "1",
         'object-fit': "cover"

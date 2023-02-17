@@ -324,7 +324,13 @@ a.text-white:hover {
 }
 
 
-
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+  border-radius: 50%;
+}
 
 
 
@@ -557,6 +563,10 @@ a.text-white:hover {
     font-size: 20px;
     bottom: 40px;
     left: 40px;
+  }
+
+  .ant-row.justify-content-center.css-j0nf2s {
+    justify-content: center !important;
   }
 }
 

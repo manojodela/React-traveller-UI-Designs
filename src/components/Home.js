@@ -23,11 +23,11 @@ const Home = () => {
                     <div className="position-absolute img-down">
                         <Row gutter={16}>
                             <Col lg={12} xs={24} className="position-relative btn-down">
-                                <img src={Hero1} className="img-fluid img-sm" alt="hero2" />
+                                <img src={Hero1} className="img-fluid img-sm m-1" alt="hero2" />
                                 <Button className="position-absolute top-100 start-100 translate-middle btn-dsp text-white">VIEW BLOG</Button>
                             </Col>
                             <Col lg={12} xs={24} className="position-relative btn-down">
-                                <img src={Hero2} className="img-fluid img-sm" alt="hero2" />
+                                <img src={Hero2} className="img-fluid img-sm m-1" alt="hero2" />
                                 <Button className="position-absolute top-100 start-100 translate-middle btn-dsp text-white" >ABOUT ME</Button>
                             </Col>
                         </Row>

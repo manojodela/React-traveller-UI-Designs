@@ -31,7 +31,7 @@ const Stories = () => {
     };
 
     const style1 = {
-        width: "246px",
+        width: "auto",
         height: "310px",
         'object-fit': "cover"
     };
